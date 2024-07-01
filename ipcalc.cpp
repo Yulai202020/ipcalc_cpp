@@ -98,8 +98,8 @@ unsigned int get_wildcart(int mask) {
 }
 
 int main(int argc, char* argv[]) {
-    if (argc < 2) {
-        std::cerr << "Usage: ./ipcalc <ip_address>/<mask>" << std::endl;
+    if (argc != 2) {
+        std::cerr << "Usage: " << argv[0] << " <ip_address>/<mask>" << std::endl;
         return -1;
     }
 
